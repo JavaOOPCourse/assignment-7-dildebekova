@@ -7,7 +7,7 @@ public class StudentRecordProcessor {
     private Student highestStudent;
 
     public void readFile() {
-        try (BufferedReader reader = new BufferedReader(new FileReader("data/students.txt"))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader("input/students.txt"))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 line = line.trim();
